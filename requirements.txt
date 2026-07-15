@@ -1,0 +1,11 @@
+pandas
+numpy
+scikit-learn
+lightgbm
+streamlit
+plotly
+shap
+matplotlib
+vaderSentiment
+groq
+python-dotenv
