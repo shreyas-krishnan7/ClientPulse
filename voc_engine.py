@@ -1,6 +1,4 @@
 """
-ClientPulse Module 3 — Voice-of-Customer -> Opportunity engine.
-
 Pipeline:
   1. classify each ticket   (category + severity + sentiment)
   2. cluster tickets into emergent themes
@@ -9,8 +7,6 @@ Pipeline:
 Classifier paths:
   * USE_LLM = True   -> Groq LLM (few-shot, batched, temperature=0)  [set GROQ_API_KEY]
   * USE_LLM = False  -> offline TF-IDF + LogisticRegression (no API key)
-
-Run (after generate_tickets.py):  python voc_engine.py
 Outputs:  data/tickets_classified.csv , data/opportunities.csv
 """
 import os
@@ -34,7 +30,7 @@ from sklearn.metrics import accuracy_score, f1_score
 
 # ---------------- config ----------------
 USE_LLM = True                 # you generated a Groq key -> use the LLM path
-SAMPLE = 300                   # START small to smoke-test the wiring; set to None for the full run
+SAMPLE = 5000                # START small to smoke-test the wiring; set to None for the full run
 GROQ_MODEL = "llama-3.1-8b-instant"   # fast + free-tier friendly (or "llama-3.3-70b-versatile" for accuracy)
 BATCH_SIZE = 20                # tickets classified per API call
 SEV_WEIGHT = {"Critical": 4, "High": 3, "Medium": 2, "Low": 1}
@@ -189,7 +185,7 @@ def score_opportunities(df):
 
 def main():
     df = pd.read_csv("data/tickets.csv")
-    SAMPLE=None
+
     if SAMPLE:
         df = df.sample(min(SAMPLE, len(df)), random_state=42).reset_index(drop=True)
         print(f"Sampled {len(df):,} tickets (set SAMPLE=None in voc_engine.py for the full run)")

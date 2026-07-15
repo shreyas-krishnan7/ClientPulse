@@ -1,12 +1,11 @@
 """
-ClientPulse Module 3 — support-ticket text generator.
+
 
 Creates data/tickets.csv, linked to the accounts in data/accounts.csv, so the
 Voice-of-Customer engine has real text to classify. Each ticket keeps a
 true_category / true_severity label so classifier accuracy can be measured.
 Templates carry light paraphrase noise so classification isn't trivially perfect.
 
-Run (after generate_data.py):  python generate_tickets.py
 """
 import os
 import numpy as np

@@ -1,8 +1,5 @@
 """
-Quick Groq connectivity test — run this to see the REAL error hidden behind
-'Connection error.' in voc_engine.py.
-
-    python test_groq.py
+Quick Groq connectivity test 
 """
 import os
 from dotenv import load_dotenv

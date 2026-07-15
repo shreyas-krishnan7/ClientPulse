@@ -1,10 +1,8 @@
-"""
-ClientPulse — standalone model trainer.
+""".
 
 Trains + validates the churn model, prints the ROC-AUC, and (if SHAP is
 installed) saves a SHAP summary plot to assets/shap_summary.png for the README.
 
-Run:  python train_model.py
 """
 import os
 from pipeline import load_data, compute_kpis, train_churn_model, prepare_features

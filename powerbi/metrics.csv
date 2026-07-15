@@ -1,0 +1,7 @@
+metric,value
+Total Accounts,5000.0
+Avg Health Score,57.7
+Avg Adoption %,50.0
+At-Risk Accounts,1021.0
+Total Revenue at Risk,4267813.0
+Churn Model AUC,0.792

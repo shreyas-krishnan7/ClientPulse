@@ -1,13 +1,8 @@
 """
-ClientPulse — Streamlit dashboard.
+Streamlit dashboard
 
 Surfaces the full chain: KPIs -> churn risk -> revenue-at-risk -> per-account
-"why", plus (Module 3) the Voice-of-Customer opportunity backlog.
 
-    python generate_data.py
-    python generate_tickets.py      # Module 3
-    python voc_engine.py            # Module 3
-    streamlit run app.py
 """
 import os
 import streamlit as st

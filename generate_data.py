@@ -1,12 +1,11 @@
 """
-ClientPulse — synthetic data generator.
+
 
 Models a B2B fintech (trading/treasury) SaaS with ~5,000 enterprise accounts.
 Each account has engagement, support, and revenue signals. A churn label is
 generated from a realistic latent-risk process so the predictive model has
 genuine signal to learn (low adoption / low logins / unresolved tickets -> churn).
 
-Run:  python generate_data.py   ->  writes data/accounts.csv
 """
 import os
 import numpy as np

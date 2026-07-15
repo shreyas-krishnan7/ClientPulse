@@ -1,5 +1,4 @@
 """
-ClientPulse — analytics + modelling pipeline.
 
 Three responsibilities:
   1. load_data       : read the account table
