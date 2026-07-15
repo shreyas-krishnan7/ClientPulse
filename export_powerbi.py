@@ -1,5 +1,9 @@
 """
+<<<<<<< HEAD
 export Power BI-ready data.
+=======
+ClientPulse — export Power BI-ready data.
+>>>>>>> 037b3c99143a17b23ea28aff7c4f4971d79d91db
 
 Produces a /powerbi folder of clean CSVs to import into Power BI Desktop:
   accounts_scored.csv  — accounts + KPIs + churn_risk + revenue_at_risk
@@ -7,7 +11,11 @@ Produces a /powerbi folder of clean CSVs to import into Power BI Desktop:
   opportunities.csv    — ranked opportunity backlog
   metrics.csv          — headline KPIs for cards (incl. model AUC)
 
+<<<<<<< HEAD
 
+=======
+Run (after voc_engine.py):  python export_powerbi.py
+>>>>>>> 037b3c99143a17b23ea28aff7c4f4971d79d91db
 """
 import os
 import pandas as pd
