@@ -16,8 +16,7 @@ Built with Python, LightGBM, an LLM (Groq/Llama-3.1), and Power BI, ClientPulse 
 
 ## 🌐 Links
 
-- **GitHub Repository:** https://github.com/<your-username>/clientpulse
-- **Live Demo (Streamlit):** _deploy to Streamlit Community Cloud and add the link here_
+- **GitHub Repository:** https://github.com/shreyas-krishnan7/ClientPulse
 
 ---
 
